@@ -1,4 +1,4 @@
-package com.github.coruja182.playground.jsonreader;
+package com.github.coruja182.playground.jsonreader.reader;
 
 import com.github.coruja182.playground.jsonreader.model.Person;
 import java.io.File;
@@ -34,8 +34,6 @@ class PersonJsonFileReaderTest {
     @Test
     @DisplayName("GIVEN a not readable file IT SHOULD throw a RuntimeException")
     public void fileDoesNotExistShouldThrowException() {
-        Assertions.assertThrows(RuntimeException.class, () -> {
-            personJsonFileReader.readFromFile(new File("this-file-does-not-exist.json"));
-        });
+        Assertions.assertThrows(RuntimeException.class, () -> personJsonFileReader.readFromFile(new File("this-file-does-not-exist.json")));
     }
 }

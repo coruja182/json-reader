@@ -1,4 +1,4 @@
-package com.github.coruja182.playground.jsonreader;
+package com.github.coruja182.playground.jsonreader.reader;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;

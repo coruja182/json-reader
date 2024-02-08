@@ -1,6 +1,7 @@
 package com.github.coruja182.playground.jsonreader;
 
 import com.github.coruja182.playground.jsonreader.model.Person;
+import com.github.coruja182.playground.jsonreader.reader.PersonJsonFileReader;
 import java.io.File;
 import java.util.List;
 
